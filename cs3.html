@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画作业</title>
+    <style>
+    *{
+        margin:0;
+        padding: 0;
+    }
+    .box{
+            width: 650px;
+            height:427px;
+            overflow: hidden;          
+            margin:0 auto;
+            margin-top:100px;
+            position: relative;
+            
+     }
+     .div1{
+        width: 650px;
+        height: 427px;
+        margin:0 auto;
+        position: absolute;
+        z-index:999;
+        -moz-transition:all 2s ease-in 0.5s;
+             transition:all 2s ease-in 0.5s;
+     }
+     .div1 h3{
+        text-align: center;
+        padding-top: 100px;
+     }
+     .div1 p{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .box img{
+        -moz-transition:all 2s ease-in 0.5s;
+             transition:all 2s ease-in 0.5s;
+    }
+    .box:hover img{
+        -moz-transform:scaleX(1.2);
+             transform:scaleX(1.2);
+    }
+
+    .box:hover .div1{
+        -moz-transform:translateY(-427px);
+        transform:translateY(-427px);
+    }
+
+    </style>
+</head>
+<body>
+ <div class="box"><img src="1.jpg" height="427" width="650">  
+                  <div class="div1">
+                         <h3>木兰词·拟古决绝词柬友_百度汉语</h3>
+                         <p>作者：纳兰性德</p>
+                         <p>人生若只如初见，何事秋风悲画扇。</p>
+                         <p>等闲变却故人心，却道故人心易变。</p>
+                         <p>骊山语罢清宵半，泪雨零铃终不怨。</p>
+                         <p>何如薄幸锦衣郎，比翼连枝当日愿。</p>
+                  </div>
+</div> 
+</body>
+</html>
